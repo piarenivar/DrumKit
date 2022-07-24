@@ -1,0 +1,153 @@
+body {
+    margin: 0 auto;
+    background-color: #131316;
+    color: #b1a7a6;
+    font-family: 'Montserrat', sans-serif;
+    /* letter-spacing: .1rem; */
+}
+
+.container {
+    padding: 1rem 2rem 6rem;
+}
+
+@media (max-width: 675px) {
+    .container {
+        padding: 1rem 1rem;
+    }
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 8rem;
+    transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.fa-brands {
+    color: #5b5c62;
+    transition: all .2s ease-in-out;
+}
+
+.fa-brands:hover {
+    color: #b1a7a6;
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+@media (max-width: 675px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+p {
+    color: rgb(177, 167, 166, .5);
+    /* letter-spacing: .1rem; */
+}
+
+@media (max-width: 1024px) {
+    p {
+        display: none;
+    }
+}
+
+
+.w {
+    /* background-image: url("/images/favicon.png"); */
+}
+
+.a {}
+
+.s {}
+
+.d {}
+
+.j {}
+
+.k {}
+
+.l {}
+
+.set {
+    margin: 10% auto 2%;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+}
+
+.red {
+    color: red;
+}
+
+.drum {
+    outline: none;
+    border: none;
+    font-size: 3rem;
+    line-height: 2;
+    font-weight: 700;
+    color: #5b5c62;
+    border-radius: 1rem;
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    text-align: center;
+    margin: 1rem;
+    background-color: #1c1c21;
+    /* box-shadow: 0 0 1rem #26262c; */
+    transition: all .2s ease-in-out;
+    text-transform: uppercase;
+}
+
+/* @media (max-width: 675px) {
+    .drum {
+        font-size: 3rem;
+    }
+} */
+
+.drum:hover {
+    transform: scale(1.1);
+    color: #b1a7a6;
+}
+
+.drum:active {
+    transition: all .2s ease-in-out;
+    animation: keyPressed .2s ease-in-out 0s 2 alternate none;
+}
+
+.transition {
+    transition: all .2s ease-in-out;
+    animation: keyPressed .2s ease-in-out 0s 2 alternate none;
+}
+
+@-webkit-keyframes keyPressed {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+        color: #b1a7a6;
+    }
+}
+
+.footer {
+    margin: 2rem 0;
+}
