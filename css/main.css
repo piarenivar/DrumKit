@@ -127,10 +127,10 @@ p {
     color: #b1a7a6;
 }
 
-.drum:active {
+/* .drum:active {
     transition: all .2s ease-in-out;
     animation: keyPressed .2s ease-in-out 0s 2 alternate none;
-}
+} */
 
 .transition {
     transition: all .2s ease-in-out;

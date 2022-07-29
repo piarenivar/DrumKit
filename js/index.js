@@ -5,12 +5,13 @@ for (var i = 0; i < document.querySelectorAll('.drum').length; i++) {
         var buttonInnerHTML = this.innerHTML;
 
         makeSound(buttonInnerHTML);
+        buttonAnimation(buttonInnerHTML);
     }
 };
 
 document.addEventListener('keydown', function (event) {
     makeSound(event.key);
-    // document.querySelector(".drum").classList.add("transition");
+    buttonAnimation(event.key);
 });
 
 function makeSound(key) {
@@ -18,7 +19,6 @@ function makeSound(key) {
         case "w":
             // var tom1 = new Audio("/sounds/tom-1.mp3");
             new Audio("/sounds/tom-1.mp3").play();
-            // document.querySelector(".w").classList.add("transition");
             break;
 
         case "a":
@@ -56,3 +56,14 @@ function makeSound(key) {
 }
 
 // document.querySelector(".w").style.color = "red";
+
+function buttonAnimation (currentKey) {
+    var activeButton = document.querySelector("." + currentKey);
+    activeButton.classList.add("transition");
+
+    setTimeout(function(){
+        activeButton.classList.remove("transition");
+    }, 350);
+
+    // buttonPressed.classList.remove("transition");
+}
