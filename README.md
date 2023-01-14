@@ -1,2 +1,4 @@
 # DrumKit
-This is a JS based Drum Kit Player
+This is a JavaScript based Drum Kit Player.
+
+You can visit the site at https://piarenivar.github.io/DrumKit/.
